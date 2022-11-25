@@ -59,7 +59,7 @@ allow qvrd sysfs_graphics:file rw_file_perms;
 # Camera
 #
 
-hal_client_domain(qvrd, hal_camera);
+#hal_client_domain(qvrd, hal_camera);
 set_prop(qvrd, camera_prop)
 
 # Allow access to camera HAL
@@ -70,4 +70,4 @@ allow qvrd { gpu_device video_device camera_device sensors_device }:chr_file rw_
 # Perfd
 #
 
-hal_client_domain(qvrd, hal_perf);
+#hal_client_domain(qvrd, hal_perf);
